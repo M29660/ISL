@@ -23,7 +23,7 @@ body a{
 }
 /*-----start-header----*/
 .bg{
-	background:url(/baner.jpg) no-repeat 0px 0px;
+	background:url(baner.jpg) no-repeat 0px 0px;
 	background-size:cover;
 }
 .header{
@@ -79,6 +79,7 @@ body a{
 nav {
 	position: relative;
 	float: right;
+	margin-top: -25px;
 }
 nav ul {
 	padding: 0;
