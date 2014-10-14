@@ -4,12 +4,24 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
+
+#default: &default
+#  adapter:  mysql
+#  pool: 5
+#  timeout: 5000
+#  username: root
+#  password: E4Fproduction
+
 default: &default
-  adapter:  mysql
+  adapter: mysql
+  encoding: utf8
+  database: <%=ENV['islwebsite']%>
   pool: 5
-  timeout: 5000
+  host: <%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
+  port: <%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
   username: root
   password: E4F
+  socket: <%=ENV['OPENSHIFT_MYSQL_DB_SOCKET']%>  
 
 development:
   <<: *default
@@ -22,6 +34,7 @@ development:
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
+
 test:
   <<: *default
   database: db_test
@@ -30,13 +43,21 @@ test:
   username: root
   password: E4F
 
-production:
-  <<: *default
+#production:
+#  <<: *default
 #  database: db_production
-  database: islwebsite
+#  pool: 5
+#  timeout: 5000
+#  username: root
+#  password: E4F
+
+production:
+  adapter: mysql
+  encoding: utf8
+  database: <%=ENV['islwebsite']%>
   pool: 5
-  timeout: 5000
- # username: root
- # password: E4F
-  username: adminYk5lfW5
-  password: TrzLLkw9-HjB
+  host: <%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
+  port: <%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
+  username: <%=ENV['adminYk5lfW5']%>
+  password: <%=ENV['TrzLLkw9-HjB']%>
+  socket: <%=ENV['OPENSHIFT_MYSQL_DB_SOCKET']%>
