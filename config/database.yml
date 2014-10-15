@@ -65,5 +65,3 @@ production:
 
 #  host: <%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
 #  port: <%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
-
-TrzLLkw9-HjB
