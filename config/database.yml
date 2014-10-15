@@ -21,7 +21,7 @@ default: &default
   port: <%=ENV['3306']%>
   username: <%=ENV['adminYk5lfW5']%>
   password: <%=ENV['TrzLLkw9-HjB']%>
-  socket: <%=ENV['/var/lib/mysql/mysql.sock']%>
+  socket: <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
  # socket: <%=ENV['127.5.182.2']%>
 
 development:
@@ -65,3 +65,5 @@ production:
 
 #  host: <%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
 #  port: <%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
+
+TrzLLkw9-HjB
