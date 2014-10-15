@@ -15,12 +15,12 @@
 default: &default
   adapter: mysql
   encoding: utf8
-  database: <%=ENV['islwebsite']%>
+  database: islwebsite
   pool: 5
 #  host: <%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
 #  port: <%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
-username: <%=ENV['adminYk5lfW5']%>
-password: <%=ENV['TrzLLkw9-HjB']%>
+username: adminYk5lfW5
+password: TrzLLkw9-HjB
 #  socket: <%=ENV['OPENSHIFT_MYSQL_DB_SOCKET']%>  
 
 development:
@@ -54,10 +54,10 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: <%=ENV['islwebsite']%>
+  database: islwebsite
   pool: 5
 #  host: <%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
 #  port: <%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
-  username: <%=ENV['adminYk5lfW5']%>
-  password: <%=ENV['TrzLLkw9-HjB']%>
+  username: adminYk5lfW5
+  password: TrzLLkw9-HjB
 #  socket: <%=ENV['OPENSHIFT_MYSQL_DB_SOCKET']%>
