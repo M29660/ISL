@@ -19,8 +19,8 @@ default: &default
   pool: 5
   host: <%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
   port: <%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
-  username: root
-  password: E4F
+username: <%=ENV['adminYk5lfW5']%>
+password: <%=ENV['TrzLLkw9-HjB']%>
   socket: <%=ENV['OPENSHIFT_MYSQL_DB_SOCKET']%>  
 
 development:
