@@ -21,9 +21,7 @@ default: &default
   port: <%=ENV['3306']%>
   username: <%=ENV['adminYk5lfW5']%>
   password: <%=ENV['TrzLLkw9-HjB']%>
-  socket: <%=ENV['127.5.182.2']%>  
-
-
+  socket: <%=ENV['127.5.182.2']%>
 
 development:
   <<: *default
@@ -58,11 +56,11 @@ production:
   encoding: utf8
   database: islwebsite
   pool: 5
-  host: <%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
-  port: <%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
+  host: <%=ENV['127.5.182.2']%>
+  port: <%=ENV['3306']%>
   username:  <%=ENV['adminYk5lfW5']%>
   password:  <%=ENV['TrzLLkw9-HjB']%>
-#  socket: <%=ENV['OPENSHIFT_MYSQL_DB_SOCKET']%>
+  socket: <%=ENV['127.5.182.2']%>
 
 #  host: <%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
 #  port: <%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
