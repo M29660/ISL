@@ -15,7 +15,7 @@
 default: &default
   adapter:  mysql
   encoding: utf8
-  database: islwebsite
+  database: ISLwebsite
   pool: 5
   host: <%=ENV['127.5.182.2']%>
   port: <%=ENV['3306']%>
@@ -55,7 +55,7 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: islwebsite
+  database: ISLwebsite
   pool: 5
   host: <%=ENV['127.5.182.2']%>
   port: <%=ENV['3306']%>
