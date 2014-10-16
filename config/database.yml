@@ -57,8 +57,8 @@ production:
   encoding: utf8
   database: ISLwebsite
   pool: 5
-  host: <%=ENV['127.5.182.2']%>
-  port: <%=ENV['3306']%>
+#  host: <%=ENV['127.5.182.2']%>
+#  port: <%=ENV['3306']%>
 #  username:  <%=ENV['adminYk5lfW5']%>
 #  password:  <%=ENV['TrzLLkw9-HjB']%>
 #  socket: <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
