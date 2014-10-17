@@ -23,6 +23,7 @@ default: &default
 #  password:  <%=ENV['TrzLLkw9-HjB']%>
   host:     <%=ENV['127.5.182.2']%>
   port:     <%=ENV['3306']%>
+  socket:   <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
 #  socket:   <%=ENV['OPENSHIFT_MYSQL_DB_SOCKET']%>
 
 development:
@@ -32,6 +33,8 @@ development:
   timeout: 5000
   username:  <%=ENV['root']%>
   password:  <%=ENV['E4F']%>
+  socket:   <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
+
  # database: db_development
  # pool: 5
  # timeout: 5000
@@ -49,6 +52,7 @@ test:
   timeout: 5000
   username: root
   password: E4F
+  socket:   <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
 
 #production:
 #  <<: *default
@@ -69,6 +73,6 @@ production:
 #  password:  <%=ENV['TrzLLkw9-HjB']%>
   host:     <%=ENV['127.5.182.2']%>
   port:     <%=ENV['3306']%>
-#  socket:   <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
+  socket:   <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
 #  host: <%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
 #  port: <%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
