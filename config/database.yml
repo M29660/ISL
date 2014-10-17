@@ -27,11 +27,16 @@ default: &default
 
 development:
   <<: *default
-  database: db_development
+  database:  <%=ENV['islwebsite']%>
   pool: 5
   timeout: 5000
-  username: root
-  password: E4F
+  username:  <%=ENV['root']%>
+  password:  <%=ENV['E4F']%>
+ # database: db_development
+ # pool: 5
+ # timeout: 5000
+ # username: root
+ # password: E4F
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
