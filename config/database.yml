@@ -13,7 +13,7 @@
 #  password: E4Fproduction
 
 default: &default
-  adapter: <%=ENV['mysql']%>
+  adapter: mysql
   encoding: <%=ENV['utf8']%>
   database: <%=ENV['ISLwebsite']%>
   pool: 5
