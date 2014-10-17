@@ -53,7 +53,7 @@ test:
 #  password: E4F
 
 production:
-  adapter:  mysql
+# adapter:  mysql
   encoding:  <%=ENV['utf8']%>
   database:  <%=ENV['ISLwebsite']%>
   pool: 5
