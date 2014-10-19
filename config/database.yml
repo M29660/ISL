@@ -16,13 +16,11 @@ default: &default
   adapter:  mysql
   encoding:  utf8
   pool: 5
-  database:  <%=ENV['islwebsite']%>
-  username:  <%=ENV['adminYk5lfW5']%>
+  host:     <%=ENV['127.5.182.2']%>  
   password:  <%=ENV['TrzLLkw9-HjB']%>
-  host:     <%=ENV['127.5.182.2']%>
+  username:  <%=ENV['adminYk5lfW5']%>
+  database:  <%=ENV['mysql://adminYk5lfW5:TrzLLkw9-HjB@127.5.182.2:3306/']%>
   port:     <%=ENV['3306']%>
-#  socket:   <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
-#  socket:   <%=ENV['OPENSHIFT_MYSQL_DB_SOCKET']%>
 
 development:
   <<: *default
@@ -63,14 +61,25 @@ test:
 #  password: E4F
 
 production:
-  adapter:  mysql
+
+ adapter:  mysql
   encoding:  utf8
   pool: 5
-  database:  <%=ENV['islwebsite']%>
-  username:  <%=ENV['adminYk5lfW5']%>
+  host:     <%=ENV['127.5.182.2']%>  
   password:  <%=ENV['TrzLLkw9-HjB']%>
-  host:     <%=ENV['127.5.182.2']%>
+  username:  <%=ENV['adminYk5lfW5']%>
+  database:  <%=ENV['mysql://adminYk5lfW5:TrzLLkw9-HjB@127.5.182.2:3306/']%>
   port:     <%=ENV['3306']%>
+
+
+#  adapter:  mysql
+#  encoding:  utf8
+#  pool: 5
+#  database:  <%=ENV['islwebsite']%>
+#  username:  <%=ENV['adminYk5lfW5']%>
+#  password:  <%=ENV['TrzLLkw9-HjB']%>
+#  host:     <%=ENV['127.5.182.2']%>
+#  port:     <%=ENV['3306']%>
 #  socket:   <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
 #  host: <%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
 #  port: <%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>
