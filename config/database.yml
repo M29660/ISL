@@ -16,11 +16,11 @@ default: &default
   adapter:  mysql
   encoding:  utf8
   pool: 5
-  host:     <%=ENV['127.5.182.2']%>  
-  password:  <%=ENV['TrzLLkw9-HjB']%>
-  username:  <%=ENV['adminYk5lfW5']%>
-  database:  <%=ENV['mysql://adminYk5lfW5:TrzLLkw9-HjB@127.5.182.2:3306/']%>
-  port:     <%=ENV['3306']%>
+  host:       <%=ENV['127.5.182.2']%>
+  password:   <%=ENV['TrzLLkw9-HjB']%>
+  username:   <%=ENV['adminYk5lfW5']%>
+  database:   <%=ENV['mysql://adminYk5lfW5:TrzLLkw9-HjB@127.5.182.2:3306/']%>
+  port:       <%=ENV['3306']%>
 
 development:
   <<: *default
@@ -65,11 +65,11 @@ production:
  adapter:  mysql
   encoding:  utf8
   pool: 5
-  host:     <%=ENV['127.5.182.2']%>  
-  password:  <%=ENV['TrzLLkw9-HjB']%>
-  username:  <%=ENV['adminYk5lfW5']%>
-  database:  <%=ENV['mysql://adminYk5lfW5:TrzLLkw9-HjB@127.5.182.2:3306/']%>
-  port:     <%=ENV['3306']%>
+  host:       <%=ENV['127.5.182.2']%>
+  password:   <%=ENV['TrzLLkw9-HjB']%>
+  username:   <%=ENV['adminYk5lfW5']%>
+  database:   <%=ENV['mysql://adminYk5lfW5:TrzLLkw9-HjB@127.5.182.2:3306/']%>
+  port:       <%=ENV['3306']%>
 
 
 #  adapter:  mysql
