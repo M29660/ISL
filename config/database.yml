@@ -21,6 +21,7 @@ default: &default
   username:   <%=ENV['adminYk5lfW5']%>
   password:   <%=ENV['TrzLLkw9-HjB']%>
   database:   <%=ENV['mysql://adminYk5lfW5:TrzLLkw9-HjB@127.5.182.2:3306/']%>
+  socket:     <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
 
 development:
   <<: *default
@@ -69,7 +70,7 @@ production:
   username:   <%=ENV['adminYk5lfW5']%>
   password:   <%=ENV['TrzLLkw9-HjB']%>
   database:   <%=ENV['mysql://adminYk5lfW5:TrzLLkw9-HjB@127.5.182.2:3306/']%>
-
+  socket:     <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
 
 #  adapter:  mysql
 #  encoding:  utf8
