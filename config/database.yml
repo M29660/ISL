@@ -27,18 +27,12 @@ development:
   <<: *default
   pool: 5
   timeout: 5000
-  database:  <%=ENV['islwebsite']%>
-  username:  <%=ENV['adminYk5lfW5']%>
-  password:  <%=ENV['TrzLLkw9-HjB']%>
-#  username:  <%=ENV['root']%>
-#  password:  <%=ENV['E4F']%>
-#  socket:   <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
-
- # database: db_development
- # pool: 5
- # timeout: 5000
- # username: root
- # password: E4F
+  host:       <%=ENV['127.5.182.2']%>
+  port:       <%=ENV['3306']%>
+  username:   <%=ENV['adminYk5lfW5']%>
+  password:   <%=ENV['TrzLLkw9-HjB']%>
+  database:   <%=ENV['mysql://adminYk5lfW5:TrzLLkw9-HjB@127.5.182.2:3306/']%>
+  socket:     <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -49,17 +43,12 @@ test:
   database: db_test
   pool: 5
   timeout: 5000
-  username: root
-  password: E4F
-  socket:   <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
-
-#production:
-#  <<: *default
-#  database: db_production
-#  pool: 5
-#  timeout: 5000
-#  username: root
-#  password: E4F
+  host:       <%=ENV['127.5.182.2']%>
+  port:       <%=ENV['3306']%>
+  username:   <%=ENV['adminYk5lfW5']%>
+  password:   <%=ENV['TrzLLkw9-HjB']%>
+  database:   <%=ENV['mysql://adminYk5lfW5:TrzLLkw9-HjB@127.5.182.2:3306/']%>
+  socket:     <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
 
 production:
   adapter:  mysql
@@ -71,15 +60,3 @@ production:
   password:   <%=ENV['TrzLLkw9-HjB']%>
   database:   <%=ENV['mysql://adminYk5lfW5:TrzLLkw9-HjB@127.5.182.2:3306/']%>
   socket:     <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
-
-#  adapter:  mysql
-#  encoding:  utf8
-#  pool: 5
-#  database:  <%=ENV['islwebsite']%>
-#  username:  <%=ENV['adminYk5lfW5']%>
-#  password:  <%=ENV['TrzLLkw9-HjB']%>
-#  host:     <%=ENV['127.5.182.2']%>
-#  port:     <%=ENV['3306']%>
-#  socket:   <%=ENV['/var/lib/openshift/542d71e55973ca383d00050c/mysql//socket/mysql.sock']%>
-#  host: <%=ENV['OPENSHIFT_MYSQL_DB_HOST']%>
-#  port: <%=ENV['OPENSHIFT_MYSQL_DB_PORT']%>

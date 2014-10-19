@@ -11,6 +11,13 @@ default: &default
   username: root
   password: E4F
 
+#default: &default
+#  adapter:  mysql
+#  pool: 5
+#  timeout: 5000
+#  username: root
+#  password: E4Fproduction
+
 development:
   <<: *default
   database: db_development
